@@ -1,7 +1,9 @@
 def my_collect(array)
-first_names=[]
-   array.each do |name|
-    first_names << name.split(" ").first
-end
-first_names
+  i = 0
+  collect = []
+  while i < array.length
+    collect << yield(array[i])
+    i+=1
+  end
+  collect
 end
