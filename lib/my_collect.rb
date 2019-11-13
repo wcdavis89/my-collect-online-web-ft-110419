@@ -1,8 +1,7 @@
 def my_collect(array)
-  while  first_names=[]
+first_names=[]
    array.each do |name|
     first_names << name.split(" ").first
 end
 first_names
-end
 end
